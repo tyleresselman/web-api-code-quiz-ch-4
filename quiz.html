@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>A quiz on code, or a Code Quiz</title>
+</head>
+
+<body>
+    <header>
+        <div id="highScoreLink"><a href="#"></a>View high scores</div>
+        <div id="timer">Time: </div>
+    </header>
+
+    <section class="card" id="start-page">
+        <h1>Coding Quiz Challenge</h1>
+
+        <p>You ready for this shit? You're about to test your dang Javascript knowledge. It's gonna get wild. Buckle up, buttercup. Smash that start button.</p>
+
+        <button>Start the QUIZ.</button>
+
+    </section>
+
+    <section class="card" id="question-page">
+
+        <h2 id="question-text"></h2>
+
+        <ul>
+            <li id="answer-1"></li>
+            <li id="answer-2"></li>
+            <li id="answer-3"></li>
+            <li id="answer-4"></li>
+        </ul>
+
+        <div id="right-or-wrong"></div>
+
+    </section>
+
+    <section class="card" id="submission-page">
+
+        <h2>All done!</h2>
+        <p>Your final score is... <span id="final-score"></span></p>
+
+        <p>Enter initials:</p><input type="text">
+        <button>Submit</button>
+
+    </section>
+ 
+    
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
