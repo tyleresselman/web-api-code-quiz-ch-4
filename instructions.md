@@ -97,3 +97,41 @@ You are required to submit BOTH of the following for review:
 ---
 
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+<!-- quiz.js
+start button
+    when clicked starts timer and reveals first iteration of questions
+        event listener click on button
+        toggle display to questions section
+timer
+    set interval function(in milliseconds)
+    counter 90 secs
+    clear interval = 0
+    display non
+
+question section function
+    function for each seperate question
+        populates question texts (h2)
+        list items for possible answers
+            event listener for licks on li
+            vaididate one answer
+            invalid answers reduce timer*** first cut
+            wait 3-5 second to dsiplay next q
+            create var for score
+        if vaild answer is clicked display in div youre right
+                add var score to var array final score
+            else display your wrong
+                add var score 0 to var array final score
+        calls question function
+section submissionPage
+in span for finalScore parse intArray scores
+function for storing input and finalScore into localStorage
+    eventListener click submit
+    set into string for local storage
+scoreboard.js
+ function to get stored string of intials + finalScore
+    display in ordered list?
+        figure out way to order by var finalScore
+  link to homepage
+  eventListener for clear scores
+    function to clear local storage -->
