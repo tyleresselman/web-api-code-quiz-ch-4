@@ -13,28 +13,28 @@
     <header>
 
         <div id="highScoreLink"><a href="scoreBoard.html"></a>View high scores</div>
-        <div id="timer">Time: <span id="counter"></span></div>
+        <div id="timer">Time remaining: <span id="timer-count">90</span> seconds</div>
         
     </header>
 
     <main>
 
-    <section id="start-page">
+    <section class="card" id="start-page">
 
         <h1>Coding Quiz Challenge</h1>
 
         <p>You ready for this? You're about to test your dang Javascript knowledge. It's gonna get wild. Buckle up, buttercup. Smash that start button.</p>
 
-        <button>Start the QUIZ.</button>
+        <button id="start-button">Start the QUIZ.</button>
 
     </section>
 
-    <section class="card" id="question-page">
+    <section class="card hidden" id="question-page">
 
-        <h2 id="question-text"></h2>
+        <h2 id="question-heading"></h2>
 
         <ul>
-            <li id="answer-1"></li>
+            <li id="answer-1"><button></button></li>
             <li id="answer-2"></li>
             <li id="answer-3"></li>
             <li id="answer-4"></li>
@@ -44,7 +44,7 @@
 
     </section>
 
-    <section class="card" id="submission-page">
+    <section class="card hidden" id="submission-page">
 
         <h2>All done!</h2>
         <p>Your final score is... <span id="final-score"></span></p>
@@ -56,7 +56,7 @@
 
     </main>
  
-    <script src="./assets/script.js"></script>
+    <script src="./assets/js/quiz.js"></script>
 
 </body>
 

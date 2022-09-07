@@ -15,11 +15,15 @@ main {
     padding: 15%;
 }
 
-.card {
+.hidden {
     display: none;
 }
 
-#start-page {
+.revealed {
+    display: block;
+}
+
+.card {
     text-align: center;
 }
 
