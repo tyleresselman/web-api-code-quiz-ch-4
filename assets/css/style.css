@@ -15,16 +15,12 @@ main {
     padding: 15%;
 }
 
-.hidden {
-    display: none;
-}
-
-.revealed {
-    display: block;
-}
-
 .card {
     text-align: center;
 }
 
+div a {
+    text-decoration: none;
+    color: black;
+}
 
