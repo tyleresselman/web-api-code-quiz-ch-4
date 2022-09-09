@@ -10,7 +10,7 @@ var ans1 = document.querySelector("#ans-1");
 var ans2 = document.querySelector("#ans-2");
 var ans3 = document.querySelector("#ans-3");
 var timer;
-var timerCount;
+var timerCount = 90;
 var currentQuestion = 0;
 
 // Here are the methods I used to hide the quiz elements on the page and keep the main page displayed
@@ -42,7 +42,7 @@ var questionsAnswers = [
   startButton.addEventListener("click", startQuiz);
   // And the corresponding function intiated by the click
   function startQuiz() {
-    timerCount = 90;
+    // timerCount = 90;
     startTimer();
     startPage.hidden = true;
     showQuestion();
@@ -92,20 +92,25 @@ function startTimer() {
     
     if (ansSelected.value === correctChoice){
       console.log('correct answer')
-      currentQuestion += 1;
-      if (currentQuestion >= questionsAnswers.length) {
-        // TO DO: include the end quiz function here
-      } else {
-        showQuestion()
-      }
-      
-    } else {
+      currentQuestion += 1}
+
+    if (ansSelected.value !== correctChoice) {
       timer+= -10;
-      console.log('values dont match')
+      console.log('values dont match');
     }
-    
-    
-  }
+
+    if (currentQuestion >= questionsAnswers.length) {
+        // endQuiz();
+      }
+
+      showQuestion();
+
+     }
+
+    //  function endQuiz() {
+      
+    //  }
+
   
   ans0.addEventListener("click", rightOrwrong);
   ans1.addEventListener("click", rightOrwrong);
