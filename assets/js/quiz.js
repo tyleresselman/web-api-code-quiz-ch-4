@@ -94,8 +94,8 @@ function startTimer() {
       console.log('correct answer')
       currentQuestion += 1}
 
-    if (ansSelected.value !== correctChoice) {
-      timer+= -10;
+    if (ansSelected.value !== correctChoice && timerCount >= 1) {
+      timerCount+= -10;
       console.log('values dont match');
     }
 
